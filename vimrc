@@ -9,11 +9,12 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'scrooloose/nerdtree'
+" The theme, first
+Plugin 'buztard/vim-marshmallow'
 
+Plugin 'scrooloose/nerdtree'
 Plugin 'SirVer/ultisnips'
 Plugin 'bling/vim-airline'
-Plugin 'baskerville/bubblegum'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'dag/vim-fish'
 Plugin 'tomtom/tcomment_vim'
@@ -23,13 +24,12 @@ Plugin 'vim-scripts/FuzzyFinder'
 
 Plugin 'rking/ag.vim'
 Plugin 'mekanix/Vim-Autoclose'
-Plugin 'davidhalter/jedi-vim'
 Plugin 'klen/python-mode'
 Plugin 'ivanov/vim-ipython'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/apachelogs.vim'
 Plugin 'vim-scripts/vim-multiedit'
-" Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
@@ -37,7 +37,6 @@ Plugin 'burnettk/vim-angular'
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'emmet.vim'
-Plugin 'vim-htmldjango_omnicomplete'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'

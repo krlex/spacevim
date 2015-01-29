@@ -51,7 +51,7 @@ nnoremap <c-i> :bprevious<cr>
 
 syntax on
 
-colorscheme bubblegum
+colorscheme marshmallow
 
 " automatically strip trailing spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
