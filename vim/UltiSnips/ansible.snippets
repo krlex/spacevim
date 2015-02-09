@@ -206,3 +206,23 @@ snippet gem "Gem declaration" !b
     name: $2
     state: ${3:present}
 endsnippet
+
+snippet postgresql_db "Postgresql DB declaration" !b
+- name: $1
+  sudo: yes
+  sudo_user: postgres
+  postgresql_db:
+    name: $2
+    encoding: 'UTF-8'
+    template: 'template0'
+endsnippet
+
+snippet postgresql_user "Postgresql user declaration" !b
+- name: $1
+  sudo: yes
+  sudo_user: postgres
+  postgresql_user:
+    name: $2
+    password: $3
+    db: $4
+endsnippet
