@@ -26,3 +26,15 @@ snippet ngst "A script tag holding Angular template"
 	$0
 </script>
 endsnippet
+
+
+snippet hh "Any HTML element"
+<$1>
+    $0
+</${1/(\w+).*/$1/}>
+endsnippet
+
+
+snippet h "Any HTML element"
+<$1>$0
+endsnippet
