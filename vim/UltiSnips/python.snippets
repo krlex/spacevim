@@ -1,21 +1,39 @@
 snippet def "Function declaration" !b
 def $1($2):
+    """
+    $3
+    """
     $0
 endsnippet
 
 snippet class "Class declaration" !b
 class $1(${2:object}):
+    """
+    $3
+    """
     $0
 endsnippet
 
 snippet serializer "Serializer class" !b
 class $1Serializer(serializers.${2:Model}Serializer):
+    """
+    $3
+    """
     class Meta:
         model = models.$1
 endsnippet
 
 snippet viewset "Viewset class" !b
 class $1ViewSet(viewsets.${2:Model}ViewSet):
+    """
+    $3
+    """
     serializer_class = serializers.$1Serializer
     queryset = serializer_class.Meta.model.objects.all()
+endsnippet
+
+snippet doc "Docstring" !b
+"""
+$1
+"""
 endsnippet
