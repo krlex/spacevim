@@ -8,6 +8,6 @@ ln -s "${VIM_ROOT_DIR}/vimrc" ~/.vimrc
 cd "${VIM_ROOT_DIR}"
 git submodule init
 git submodule update
-vim +PluginInstall +qall
+printf '\n\n' | vim +PluginInstall +qall
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh
