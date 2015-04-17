@@ -8,6 +8,7 @@ snippet apt "Apt declaration" !b
     state: latest
 endsnippet
 
+
 snippet template "Template declaration" !b
 - name: $1
   sudo: yes
@@ -23,7 +24,7 @@ snippet yum "Yum declaration" !b
 - name: install $1
   sudo: yes
   yum:
-    pkg: $1
+    pkg: $2
     state: latest
 endsnippet
 
@@ -132,7 +133,6 @@ snippet git "Git declaration" !b
     repo: $2
     dest: $3
     accept_hostkey: yes
-    depth: 1
 endsnippet
 
 
