@@ -60,3 +60,9 @@ autocmd BufNewFile,BufReadPost *.html,*.css,*.scss,*.js setlocal softtabstop=2 s
 
 " Resize splits when the window is resized
 au VimResized * exe "normal! \<c-w>="
+
+" Resolve YouCompleteMe and UltiSnips conflict
+let g:ycm_key_list_select_completion = ['\<C-TAB>', '\<Down>']
+let g:ycm_key_list_previous_completion = ['\<C-S-TAB>', '\<Up>']
+
+let g:SuperTabDefaultCompletionType = '\<C-Tab>'
