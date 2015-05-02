@@ -44,6 +44,9 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-eunuch'
 Plugin 'vim-scripts/Gundo'
 
+Plugin 'ervandew/supertab'
+
 call vundle#end()
 
 filetype plugin indent on     " Required!
+
