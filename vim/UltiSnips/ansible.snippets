@@ -228,3 +228,11 @@ snippet postgresql_user "Postgresql user declaration" !b
     password: $3
     db: $4
 endsnippet
+
+snippet npm "NPM declaration" !b
+- name: $1
+  sudo: yes
+  npm:
+    name: $2
+    global: yes
+endsnippet
