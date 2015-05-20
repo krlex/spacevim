@@ -45,6 +45,7 @@ Plugin 'tpope/vim-eunuch'
 Plugin 'vim-scripts/Gundo'
 
 Plugin 'ervandew/supertab'
+Plugin 'shime/vim-livedown'
 
 call vundle#end()
 
