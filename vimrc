@@ -46,6 +46,7 @@ Plugin 'vim-scripts/Gundo'
 
 Plugin 'ervandew/supertab'
 Plugin 'shime/vim-livedown'
+Plugin 'Yggdroot/indentLine'
 
 call vundle#end()
 
