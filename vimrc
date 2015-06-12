@@ -18,10 +18,8 @@ Plugin 'bling/vim-airline'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'dag/vim-fish'
 Plugin 'tomtom/tcomment_vim'
-
 Plugin 'vim-scripts/L9'
 Plugin 'vim-scripts/FuzzyFinder'
-
 Plugin 'rking/ag.vim'
 Plugin 'mekanix/Vim-Autoclose'
 Plugin 'klen/python-mode'
@@ -30,7 +28,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/apachelogs.vim'
 Plugin 'vim-scripts/vim-multiedit'
 Plugin 'scrooloose/syntastic'
-
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 Plugin 'burnettk/vim-angular'
@@ -43,10 +40,11 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-eunuch'
 Plugin 'vim-scripts/Gundo'
-
 Plugin 'ervandew/supertab'
 Plugin 'shime/vim-livedown'
 Plugin 'Yggdroot/indentLine'
+Plugin 'tpope/vim-repeat'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 

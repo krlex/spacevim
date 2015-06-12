@@ -236,3 +236,12 @@ snippet npm "NPM declaration" !b
     name: $2
     global: yes
 endsnippet
+
+snippet shell "Shell declaration" !b
+- name: $1
+  sudo: yes
+  shell: $2
+  args:
+    chdir: $3
+    creates: $4
+endsnippet
