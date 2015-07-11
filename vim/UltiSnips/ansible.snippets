@@ -245,3 +245,11 @@ snippet shell "Shell declaration" !b
     chdir: $3
     creates: $4
 endsnippet
+
+snippet synchronize "Sync declaration" !b
+- name: $1
+  sudo: yes
+  synchronize:
+    src: $2
+    dest: $3
+endsnippet
