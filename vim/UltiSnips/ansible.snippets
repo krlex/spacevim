@@ -253,3 +253,12 @@ snippet synchronize "Sync declaration" !b
     src: $2
     dest: $3
 endsnippet
+
+snippet lineinfile "Lineinfile declaration" !b
+- name: $1
+  lineinfile:
+    dest: $2
+    regexp: $3
+    line: $4
+    state: ${5:present}
+endsnippet
