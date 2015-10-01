@@ -9,5 +9,6 @@ cd "${VIM_ROOT_DIR}"
 git submodule init
 git submodule update
 printf '\n\n' | vim +PluginInstall +qall
+printf '\n\n' | vim +PluginUpdate +qall
 cd ~/.vim/bundle/YouCompleteMe
-./install.sh
+./install.py
