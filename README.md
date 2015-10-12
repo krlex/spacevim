@@ -8,11 +8,12 @@ $ vim/bin/init.sh
 Shortcuts
 =========
 
-The leader is set to backslash (\)
+The leader is set to backslash (\\ on keyboard)
 
 Github
 ------
 * view on github: `<leader>gb` (select lines you want highlighted)
+* post to gist: `<leader>c` (select lines if you don't want to paste the whole file)
 
 Vagrant
 -------
