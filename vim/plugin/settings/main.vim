@@ -55,7 +55,7 @@ colorscheme marshmallow
 
 " automatically strip trailing spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
-autocmd BufNewFile,BufReadPost *.html,*.css,*.scss,*.js,*.jsx setlocal softtabstop=2 shiftwidth=2
+autocmd BufNewFile,BufReadPost *.ino,*.html,*.css,*.scss,*.js,*.jsx setlocal softtabstop=2 shiftwidth=2
 
 
 " Resize splits when the window is resized
