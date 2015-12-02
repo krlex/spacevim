@@ -10,6 +10,10 @@ Shortcuts
 
 The leader is set to backslash (\\ on keyboard)
 
+NERDTree
+--------
+* open/close nerdtree: `F2`
+
 Github
 ------
 * view on github: `<leader>gb` (select lines you want highlighted)
