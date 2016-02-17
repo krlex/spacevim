@@ -45,6 +45,7 @@ Plugin 'shime/vim-livedown'
 Plugin 'Yggdroot/indentLine'
 Plugin 'tpope/vim-repeat'
 Plugin 'mxw/vim-jsx'
+Plugin 'moll/vim-node'
 
 call vundle#end()
 

@@ -263,3 +263,11 @@ snippet lineinfile "Lineinfile declaration" !b
     line: $4
     state: ${5:present}
 endsnippet
+
+snippet wait_for "Wait for port/file" !b
+- name: $1
+  wait_for:
+    host: $2
+    port: $3
+    delay: $4
+endsnippet
