@@ -1,15 +1,25 @@
 # vim: set ft=javascript:
 
-snippet ngb "A binding in AngularJS"
-{{${1:binding}}}$0
+snippet action "Create React action" !b
+export const ${1:action} = createAction(${2:ACTION_TYPE}, ($3) => ({
+  status: '${4:initial}',
+}));
 endsnippet
 
 
-snippet ngm "Bind a view to a model"
-ng-model="${1:model}"$0
-endsnippet
-
-
-snippet ngd "Disable a form element"
-ng-disabled="${1:model}"$0
+snippet thunk "Create React thunk action" !b
+export const ${1:action} = ($3) =>
+  dispatch => {
+    dispatch(${4:begin()});
+    fetch({
+      url: ${5:`${API_URL}/`},
+    })
+      .then(${6:json} => {
+        dispatch(success($6));
+        return $6;
+      })
+      .catch(${7:error}=> {
+        dispatch(fail($7.message));
+      });
+  };
 endsnippet
