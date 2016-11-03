@@ -1,5 +1,5 @@
 set nocompatible              " be iMproved, required
-set shell=/bin/bash
+set shell=/bin/sh
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -50,4 +50,3 @@ Plugin 'moll/vim-node'
 call vundle#end()
 
 filetype plugin indent on     " Required!
-

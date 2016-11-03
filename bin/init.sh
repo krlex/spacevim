@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 VIM_ROOT_DIR="$(readlink -f $(dirname $0)/..)"
 
