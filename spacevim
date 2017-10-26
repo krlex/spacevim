@@ -6,10 +6,10 @@ let g:spacevim_plug_home = '~/.vim/plugged'
 function! Layers()
 
   " Default layers
-  Layer 'auto-completion'
   Layer 'better-defaults'
   Layer 'c-c++'
   Layer 'code-snippets'
+  Layer 'ctrlp'
   Layer 'file-manager'
   Layer 'fzf'
   Layer 'git'
@@ -20,6 +20,7 @@ function! Layers()
   Layer 'python'
   Layer 'syntax-checking'
   Layer 'unite'
+  Layer 'ycmd'
 
 endfunction
 
@@ -55,5 +56,7 @@ function! UserConfig()
       let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
     endif
   endif
+
+  autocmd BufWritePre * :%s/\s\+$//e
 
 endfunction
