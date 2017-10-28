@@ -60,5 +60,7 @@ function! UserConfig()
   endif
 
   autocmd BufWritePre * :%s/\s\+$//e
+  let g:UltiSnipsEditSplit="vertical"
+  let g:UltiSnipsExpandTrigger="<tab>"
 
 endfunction
