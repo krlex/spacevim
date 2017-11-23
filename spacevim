@@ -39,7 +39,7 @@ function! UserInit()
 
   " Install personal plugins
   " Plug 'hecal3/vim-leader-guide'
-  Plug 'troydm/easytree.vim'
+  Plug 'scrooloose/nerdtree'
 
 endfunction
 
@@ -64,7 +64,7 @@ function! UserConfig()
   let g:UltiSnipsEditSplit="vertical"
   let g:UltiSnipsExpandTrigger="<tab>"
 
-  noremap <F4> :EasyTreeToggle<CR>
-  inoremap <F4> <ESC>:EasyTreeToggle<CR>
+  noremap <F4> :NERDTreeToggle<CR>
+  inoremap <F4> <ESC>:NERDTreeToggle<CR>
 
 endfunction
