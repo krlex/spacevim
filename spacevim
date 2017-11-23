@@ -11,7 +11,7 @@ function! Layers()
   Layer 'code-snippets'
   Layer 'ctrlp'
   Layer 'editing'
-  Layer 'file-manager'
+  " Layer 'file-manager'
   Layer 'fzf'
   Layer 'git'
   Layer 'github'
@@ -39,6 +39,7 @@ function! UserInit()
 
   " Install personal plugins
   " Plug 'hecal3/vim-leader-guide'
+  Plug 'troydm/easytree.vim'
 
 endfunction
 
@@ -60,5 +61,8 @@ function! UserConfig()
   endif
 
   autocmd BufWritePre * :%s/\s\+$//e
+
+  noremap <F4> :EasyTreeToggle<CR>
+  inoremap <F4> <ESC>:EasyTreeToggle<CR>
 
 endfunction
