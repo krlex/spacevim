@@ -11,7 +11,7 @@ function! Layers()
   Layer 'code-snippets'
   Layer 'ctrlp'
   Layer 'editing'
-  " Layer 'file-manager'
+  Layer 'file-manager'
   Layer 'fzf'
   Layer 'git'
   Layer 'github'
@@ -39,7 +39,6 @@ function! UserInit()
 
   " Install personal plugins
   " Plug 'hecal3/vim-leader-guide'
-  Plug 'scrooloose/nerdtree'
 
 endfunction
 
@@ -63,8 +62,5 @@ function! UserConfig()
   autocmd BufWritePre * :%s/\s\+$//e
   let g:UltiSnipsEditSplit="vertical"
   let g:UltiSnipsExpandTrigger="<tab>"
-
-  noremap <F4> :NERDTreeToggle<CR>
-  inoremap <F4> <ESC>:NERDTreeToggle<CR>
 
 endfunction
